@@ -73,6 +73,27 @@ public class VoicePlay {
                 .builder();
         executeStart(voiceBuilder);
     }
+    public void play(int titletype,String money, boolean checkNum) {
+            String  type = VoiceConstants.SUCCESS;
+               switch (titletype){
+                   case  1: //weixin
+                       type    = VoiceConstants.SUCCESS_WECHAT;
+                       break;
+                   case  2: //alipay
+                       type    = VoiceConstants.SUCCESS_ALIPAY;
+                       break;
+               }
+
+
+        VoiceBuilder voiceBuilder = new VoiceBuilder.Builder()
+                .start(type)
+                .money(money)
+                .unit(VoiceConstants.YUAN)
+                .checkNum(checkNum)
+                .builder();
+        executeStart(voiceBuilder);
+    }
+
 
     /**
      * 接收自定义

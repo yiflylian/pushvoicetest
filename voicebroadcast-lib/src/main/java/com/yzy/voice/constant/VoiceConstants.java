@@ -26,6 +26,11 @@ public class VoiceConstants {
     public static final String TEN_MILLION = "ten_million";
     //收款成功
     public static final String SUCCESS = "success";
+
+    //收款成功
+    public static final String SUCCESS_ALIPAY = "success_alipay";
+    //收款成功
+    public static final String SUCCESS_WECHAT = "success_wechat";
     //元
     public static final String YUAN = "yuan";
 }
